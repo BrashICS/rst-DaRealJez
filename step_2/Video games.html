@@ -1,17 +1,40 @@
-<link rel= "stylesheet" href="video games.css">
-
-  <head>
-    <title>Video games guessing game</title>
-
-    <body>
-      <div class="header">
-        <h1>Video games  guessing Game</h1>
-      </div>
-      <div class="disney">
-        <img src="video games.jpeg" alt="consoles" class="games">
-        <h2 class="rapper-name">Which video games is this?</h2>
-        <input type="text" class="guess-input" id="guess-input" placeholder="Enter your answer">
-        <button class="submit-button" id="submit-button">Submit</button>
-      </div>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Video Game Guessing Game</title>
+ <link rel="stylesheet" href="video games.css">
+ <style>
+  /* Style for black drop-down */
+  #gamechoice {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+  }
+ </style>
+</head>
+<body>
+ <div class="header">
+   <h1>Video Game Guessing Game</h1>
+   <p>Select one of these following Games:</p>
+   <select id="gamechoice" onchange="updateVideoImage()">
+     <option value="0">COD</option>
+     <option value="1">Elden Ring</option>
+     <option value="2">Fortnite</option>
+     <option value="3">God of War</option>
+     <option value="4">Red Dead Redemption</option>
+     <option value="5">Roblox</option>
+     <option value="6">Minecraft</option>
+     <option value="7">NBA 2K</option>
+     <option value="8">GTA</option>
+   </select>
+   <img id="gameimage" src="fortnite.jpeg" alt="game image">
+   <br>
+   <input type="text" class="guess-input" id="guessInput" placeholder="Enter your answer">
+   <button class="submit-button" onclick="choiceGuess()">Submit</button>
+ </div>
+ <script src="script.js" defer></script>
+</body>
+</html>
