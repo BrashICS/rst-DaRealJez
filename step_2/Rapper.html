@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rap Star Guessing Game</title>
+ <link rel="stylesheet" href="Rapper.css">
+ <style>
+  /* Style for black drop-down */
+  #rapperchoice {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+ <div class="header">
+   <h1>Rap Star Guessing Game</h1>
+   <p>Select one of these following rappers:</p>
+   <select id="rapperchoice" onchange="updateRapperImage()">
+     <option value="0">Rod Wave</option>
+     <option value="1">Polo G</option>
+     <option value="2">Travis Scott</option>
+     <option value="3">Lil Baby</option>
+     <option value="4">Metro Boomin</option>
+     <option value="5">Juice WRLD</option>
+     <option value="6">Gunna</option>
+     <option value="7">Future</option>
+   </select>
+   <img id="rapperimage" src="polo g.jpeg" alt="rapper image">
+   <br>
+   <input type="text" class="guess-input" id="guessInput" placeholder="Enter your answer">
+   <button class="submit-button" onclick="choiceGuess()">Submit</button>
+ </div>
+ <script src="script.js" defer></script>
+</body>
+</html>
