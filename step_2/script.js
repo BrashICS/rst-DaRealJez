@@ -1,4 +1,6 @@
 'use script'
 const image = new image()
 
-image.src = 
+image.src = "Rod wave.jpeg"
+
+document.getElementById("rodwave").appendChild(image);
